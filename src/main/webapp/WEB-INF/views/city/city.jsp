@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Titleqqqqqqqqqqqqqq</title>
+    <title>Title</title>
     <link href="/static/css/table.css"
           rel="stylesheet"/>
 </head>
