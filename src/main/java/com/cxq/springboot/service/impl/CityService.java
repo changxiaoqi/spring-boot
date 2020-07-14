@@ -1,12 +1,12 @@
 package com.cxq.springboot.service.impl;
 
+import com.cxq.springboot.annotation.CityAnno;
 import com.cxq.springboot.core.AbstractService;
 import com.cxq.springboot.dto.CityDto;
 import com.cxq.springboot.model.City;
 import com.cxq.springboot.service.ICityService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 
 import java.util.ArrayList;
@@ -71,4 +71,19 @@ public class CityService extends AbstractService<City> implements ICityService {
         }
         return responeList;
     }
+
+    @Override
+    @CityAnno
+    public void cityTestAnno(Long along, Integer bInt, String cString) {
+        Integer a = 1;
+        Integer b = 2;
+        Integer d = null;
+        if(true){
+            Integer c = 3;
+            d = 4;
+        }
+        Integer e = 5;
+    }
+
+
 }

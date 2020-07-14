@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -44,5 +43,11 @@ public class CityController {
     public Result findCityAndProvinceList(){
         List<CityDto> cityAndProvinceList = cityService.findCityAndProvinceList();
         return ResultGenerator.genSuccessResult(cityAndProvinceList);
+    }
+    @ResponseBody
+    @RequestMapping("/test")
+    public Result test(){
+        cityService.cityTestAnno(10L,10,"10");
+        return ResultGenerator.genSuccessResult(1111);
     }
 }

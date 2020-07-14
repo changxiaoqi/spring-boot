@@ -22,4 +22,5 @@ public interface ICityService extends Service<City> {
 
     List<CityDto> findCityAndProvinceList();
 
+    void cityTestAnno(Long along,Integer bInt,String cString);
 }
